@@ -20,3 +20,7 @@ D:\Dropbox\My Software\QuickCOM\QuickCOM\obj\Debug\QuickCOM.Properties.Resources
 D:\Dropbox\My Software\QuickCOM\QuickCOM\obj\Debug\QuickCOM.csproj.GenerateResource.Cache
 D:\Dropbox\My Software\QuickCOM\QuickCOM\obj\Debug\QuickCOM.exe
 D:\Dropbox\My Software\QuickCOM\QuickCOM\obj\Debug\QuickCOM.pdb
+D:\Dropbox\My Software\QuickCOM\QuickCOM\bin\Debug\QuickCOM.exe.manifest
+D:\Dropbox\My Software\QuickCOM\QuickCOM\bin\Debug\QuickCOM.application
+D:\Dropbox\My Software\QuickCOM\QuickCOM\obj\Debug\QuickCOM.exe.manifest
+D:\Dropbox\My Software\QuickCOM\QuickCOM\obj\Debug\QuickCOM.application

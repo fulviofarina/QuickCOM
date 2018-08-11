@@ -30,7 +30,6 @@
         {
             this.transmitterRTB = new System.Windows.Forms.RichTextBox();
             this.receiverRTB = new System.Windows.Forms.RichTextBox();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.clearBtn1 = new System.Windows.Forms.Button();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -38,25 +37,21 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.clearBtn2 = new System.Windows.Forms.Button();
-            this.sendFileBtn = new System.Windows.Forms.Button();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.resetHostBtn = new System.Windows.Forms.Button();
             this.ping = new System.Windows.Forms.Button();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
             this.ucScanner1 = new VTools.ucScanner();
-          //  ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-          //  ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-          //  ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).BeginInit();
             this.splitContainer3.Panel1.SuspendLayout();
             this.splitContainer3.Panel2.SuspendLayout();
             this.splitContainer3.SuspendLayout();
@@ -79,11 +74,6 @@
             this.receiverRTB.Size = new System.Drawing.Size(832, 181);
             this.receiverRTB.TabIndex = 2;
             this.receiverRTB.Text = "";
-            // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            this.openFileDialog1.Multiselect = true;
             // 
             // clearBtn1
             // 
@@ -179,16 +169,6 @@
             this.clearBtn2.Text = "Clear";
             this.clearBtn2.UseVisualStyleBackColor = true;
             // 
-            // sendFileBtn
-            // 
-            this.sendFileBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sendFileBtn.Location = new System.Drawing.Point(3, 91);
-            this.sendFileBtn.Name = "sendFileBtn";
-            this.sendFileBtn.Size = new System.Drawing.Size(94, 23);
-            this.sendFileBtn.TabIndex = 6;
-            this.sendFileBtn.Text = "SEND FILES";
-            this.sendFileBtn.UseVisualStyleBackColor = true;
-            // 
             // splitContainer2
             // 
             this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -212,7 +192,6 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.Controls.Add(this.resetHostBtn, 0, 3);
             this.tableLayoutPanel3.Controls.Add(this.ping, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.sendFileBtn, 0, 3);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -228,7 +207,7 @@
             // resetHostBtn
             // 
             this.resetHostBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resetHostBtn.Location = new System.Drawing.Point(3, 435);
+            this.resetHostBtn.Location = new System.Drawing.Point(3, 133);
             this.resetHostBtn.Name = "resetHostBtn";
             this.resetHostBtn.Size = new System.Drawing.Size(94, 23);
             this.resetHostBtn.TabIndex = 9;
@@ -291,7 +270,6 @@
     " F. Farina Arboccò";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
-         //   ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
@@ -299,12 +277,10 @@
             this.tableLayoutPanel2.PerformLayout();
             this.splitContainer2.Panel1.ResumeLayout(false);
             this.splitContainer2.Panel2.ResumeLayout(false);
-        //    ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.splitContainer3.Panel1.ResumeLayout(false);
             this.splitContainer3.Panel2.ResumeLayout(false);
-         //   ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).EndInit();
             this.splitContainer3.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -315,13 +291,11 @@
         private VTools.ucScanner ucScanner1;
         private System.Windows.Forms.RichTextBox transmitterRTB;
         private System.Windows.Forms.RichTextBox receiverRTB;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Button clearBtn1;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Button clearBtn2;
-        private System.Windows.Forms.Button sendFileBtn;
         private System.Windows.Forms.SplitContainer splitContainer2;
         private System.Windows.Forms.SplitContainer splitContainer3;
         private System.Windows.Forms.Label label1;

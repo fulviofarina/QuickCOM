@@ -20,34 +20,9 @@ namespace QuickCOM
                 control.AppendText(text);
             }
         }
-        private void OpenFileDialog1_FileOk(object sender, CancelEventArgs e)
-        {
-            Application.DoEvents();
+     
 
-            string[] safefilenames = openFileDialog1.SafeFileNames;
-            string[] filenames = openFileDialog1.FileNames;
-            VTools.IucScanner Iscan = ucScanner1;
-
-            for (int i = 0; i < filenames.Count(); i++)
-            {
-                this.receiverRTB.ResetText();
-                Application.DoEvents();
-                string safefilenamewithExtension = safefilenames[i];
-                string filepath = filenames[i];
-
-                Iscan.SendFile(ref filepath, ref safefilenamewithExtension);
-
-            }
-
-           
-
-        
-        }
-
-        private void SendFileBtn_Click(object sender, EventArgs e)
-        {
-            openFileDialog1.ShowDialog();
-        }
+      
 
         public Forma()
         {
@@ -55,8 +30,10 @@ namespace QuickCOM
 
             VTools.IucScanner Iscan = ucScanner1;
 
-            openFileDialog1.FileOk += OpenFileDialog1_FileOk;
-            sendFileBtn.Click += SendFileBtn_Click;
+         //   openFileDialog1.FileOk += OpenFileDialog1_FileOk;
+
+
+           // sendFileBtn.Click += SendFileBtn_Click;
 
             ping.Click += delegate
               {
@@ -81,8 +58,7 @@ namespace QuickCOM
             this.clearBtn1.Click += clear1;
             this.clearBtn2.Click += clear2;
 
-       //     Iscan.BaudRate = 9600;
-
+      
             EventHandler transmit = delegate
 
             {
@@ -105,11 +81,6 @@ namespace QuickCOM
 
             transmitterRTB.TextChanged += transmit;
 
-            receiverRTB.TextChanged += delegate
-             {
-                 //checks wether the content in the box is a file and arms it.
-               //  Iscan.CheckForFile(receiverRTB.Text);
-             };
 
             EventHandler handler = delegate
             {

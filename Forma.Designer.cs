@@ -267,7 +267,7 @@
             // 
             this.ucScanner1.BaudRate = 9600;
             this.ucScanner1.DataBits = 8;
-            this.ucScanner1.DelayTimeFile = 1000;
+            this.ucScanner1.DelayTimeFile = 500;
             this.ucScanner1.DelayTimeMsg = 50;
             this.ucScanner1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ucScanner1.Location = new System.Drawing.Point(0, 0);
@@ -287,8 +287,8 @@
             this.Controls.Add(this.splitContainer3);
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.Name = "Forma";
-            this.Text = "QuickCOM: a friendly Serial Console for bacth data/file transfer by F. Farina Arb" +
-    "occò";
+            this.Text = "QuickCOM: a friendly Serial Communication Console for bacth data/file transfer by" +
+    " F. Farina Arboccò";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();

@@ -67,7 +67,7 @@
             this.transmitterRTB.Dock = System.Windows.Forms.DockStyle.Fill;
             this.transmitterRTB.Location = new System.Drawing.Point(3, 33);
             this.transmitterRTB.Name = "transmitterRTB";
-            this.transmitterRTB.Size = new System.Drawing.Size(834, 178);
+            this.transmitterRTB.Size = new System.Drawing.Size(834, 177);
             this.transmitterRTB.TabIndex = 1;
             this.transmitterRTB.Text = "";
             // 
@@ -76,13 +76,14 @@
             this.receiverRTB.Dock = System.Windows.Forms.DockStyle.Fill;
             this.receiverRTB.Location = new System.Drawing.Point(3, 32);
             this.receiverRTB.Name = "receiverRTB";
-            this.receiverRTB.Size = new System.Drawing.Size(832, 180);
+            this.receiverRTB.Size = new System.Drawing.Size(832, 181);
             this.receiverRTB.TabIndex = 2;
             this.receiverRTB.Text = "";
             // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.Multiselect = true;
             // 
             // clearBtn1
             // 
@@ -108,7 +109,7 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.tableLayoutPanel2);
             this.splitContainer1.Size = new System.Drawing.Size(949, 475);
-            this.splitContainer1.SplitterDistance = 235;
+            this.splitContainer1.SplitterDistance = 234;
             this.splitContainer1.TabIndex = 5;
             // 
             // tableLayoutPanel1
@@ -126,7 +127,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.35185F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85.64815F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(949, 235);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(949, 234);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // label1
@@ -155,7 +156,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.61502F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 86.38498F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(949, 236);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(949, 237);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
             // label2
@@ -185,7 +186,7 @@
             this.sendFileBtn.Name = "sendFileBtn";
             this.sendFileBtn.Size = new System.Drawing.Size(94, 23);
             this.sendFileBtn.TabIndex = 6;
-            this.sendFileBtn.Text = "SEND FILE";
+            this.sendFileBtn.Text = "SEND FILES";
             this.sendFileBtn.UseVisualStyleBackColor = true;
             // 
             // splitContainer2
@@ -267,6 +268,7 @@
             this.ucScanner1.BaudRate = 9600;
             this.ucScanner1.DataBits = 8;
             this.ucScanner1.DelayTimeFile = 1000;
+            this.ucScanner1.DelayTimeMsg = 50;
             this.ucScanner1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ucScanner1.Location = new System.Drawing.Point(0, 0);
             this.ucScanner1.MaxLength = 16;
@@ -285,7 +287,8 @@
             this.Controls.Add(this.splitContainer3);
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.Name = "Forma";
-            this.Text = "Serial COMM Console by F. Farina Arboccò";
+            this.Text = "QuickCOM: a friendly Serial Console for bacth data/file transfer by F. Farina Arb" +
+    "occò";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();

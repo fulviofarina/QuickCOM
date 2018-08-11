@@ -24,14 +24,24 @@ namespace QuickCOM
         {
             Application.DoEvents();
 
+            string[] safefilenames = openFileDialog1.SafeFileNames;
+            string[] filenames = openFileDialog1.FileNames;
             VTools.IucScanner Iscan = ucScanner1;
 
-            this.receiverRTB.ResetText();
+            for (int i = 0; i < filenames.Count(); i++)
+            {
+                this.receiverRTB.ResetText();
+                Application.DoEvents();
+                string safefilenamewithExtension = safefilenames[i];
+                string filepath = filenames[i];
 
-            string safefilenamewithExtension = openFileDialog1.SafeFileName;
-            string filepath = openFileDialog1.FileName;
+                Iscan.SendFile(ref filepath, ref safefilenamewithExtension);
 
-            Iscan.SendFile(ref filepath, ref safefilenamewithExtension);
+            }
+
+           
+
+        
         }
 
         private void SendFileBtn_Click(object sender, EventArgs e)

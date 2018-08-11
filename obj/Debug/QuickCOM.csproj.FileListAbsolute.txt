@@ -10,8 +10,6 @@ D:\Dropbox\My Software\Infra\Infra\obj\Debug\QuickCOM.csproj.GenerateResource.Ca
 D:\Dropbox\My Software\Infra\Infra\obj\Debug\QuickCOM.exe
 D:\Dropbox\My Software\Infra\Infra\obj\Debug\QuickCOM.pdb
 D:\Dropbox\My Software\QuickCOM\QuickCOM\bin\Debug\QuickCOM.exe.config
-D:\Dropbox\My Software\QuickCOM\QuickCOM\obj\Debug\QuickCOM.exe
-D:\Dropbox\My Software\QuickCOM\QuickCOM\obj\Debug\QuickCOM.pdb
 D:\Dropbox\My Software\QuickCOM\QuickCOM\bin\Debug\QuickCOM.exe
 D:\Dropbox\My Software\QuickCOM\QuickCOM\bin\Debug\QuickCOM.pdb
 D:\Dropbox\My Software\QuickCOM\QuickCOM\bin\Debug\VTools.COM.dll
@@ -20,3 +18,5 @@ D:\Dropbox\My Software\QuickCOM\QuickCOM\obj\Debug\QuickCOM.csprojResolveAssembl
 D:\Dropbox\My Software\QuickCOM\QuickCOM\obj\Debug\QuickCOM.Forma.resources
 D:\Dropbox\My Software\QuickCOM\QuickCOM\obj\Debug\QuickCOM.Properties.Resources.resources
 D:\Dropbox\My Software\QuickCOM\QuickCOM\obj\Debug\QuickCOM.csproj.GenerateResource.Cache
+D:\Dropbox\My Software\QuickCOM\QuickCOM\obj\Debug\QuickCOM.exe
+D:\Dropbox\My Software\QuickCOM\QuickCOM\obj\Debug\QuickCOM.pdb

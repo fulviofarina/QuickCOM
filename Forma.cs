@@ -1,6 +1,5 @@
 ﻿using System;
-using System.ComponentModel;
-using System.Linq;
+
 using System.Windows.Forms;
 
 namespace QuickCOM
@@ -8,21 +7,18 @@ namespace QuickCOM
     public partial class Forma : Form
     {
         private int lastIndex = 0;
-
+        private delegate void refesher(RichTextBox control, string text);
         public void SetControlText(RichTextBox control, string text)
         {
             if (this.InvokeRequired)
             {
-                this.Invoke(new Action<RichTextBox, string>(SetControlText), new object[] { control, text });
+                this.Invoke(new refesher(SetControlText), new object[] { control, text });
             }
             else
             {
                 control.AppendText(text);
             }
         }
-     
-
-      
 
         public Forma()
         {
@@ -30,10 +26,9 @@ namespace QuickCOM
 
             VTools.IucScanner Iscan = ucScanner1;
 
-         //   openFileDialog1.FileOk += OpenFileDialog1_FileOk;
+            // openFileDialog1.FileOk += OpenFileDialog1_FileOk;
 
-
-           // sendFileBtn.Click += SendFileBtn_Click;
+            // sendFileBtn.Click += SendFileBtn_Click;
 
             ping.Click += delegate
               {
@@ -58,29 +53,29 @@ namespace QuickCOM
             this.clearBtn1.Click += clear1;
             this.clearBtn2.Click += clear2;
 
-      
             EventHandler transmit = delegate
 
             {
                 if (transmitterRTB.Text.Length != 0)
                 {
-                    bool ok = transmitterRTB.Text.Last() == ' ';
-                    ok = ok || transmitterRTB.Text.Last() == '\n';
-                    ok = ok || transmitterRTB.Text.Last() == '.';
+                    string text = transmitterRTB.Text;
+                    char lastChar = text[text.Length - 1];
+                    bool ok = lastChar == ' ';
+                    ok = ok || lastChar == '\n';
+                    ok = ok || lastChar == '.';
                     if (ok)
                     {
-                        if (lastIndex < transmitterRTB.Text.Length)
+                        if (lastIndex < text.Length)
                         {
-                            string tosend = transmitterRTB.Text.Substring(lastIndex);
+                            string tosend = text.Substring(lastIndex);
                             Iscan.SendContent = tosend;
                         }
-                        lastIndex = transmitterRTB.Text.Length ;
+                        lastIndex = text.Length;
                     }
                 }
             };
 
             transmitterRTB.TextChanged += transmit;
-
 
             EventHandler handler = delegate
             {

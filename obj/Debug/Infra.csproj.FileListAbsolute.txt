@@ -1,0 +1,11 @@
+D:\Dropbox\My Software\Infra\Infra\bin\Debug\Infra.exe.config
+D:\Dropbox\My Software\Infra\Infra\bin\Debug\Infra.exe
+D:\Dropbox\My Software\Infra\Infra\bin\Debug\Infra.pdb
+D:\Dropbox\My Software\Infra\Infra\bin\Debug\VTools.COM.dll
+D:\Dropbox\My Software\Infra\Infra\bin\Debug\VTools.COM.pdb
+D:\Dropbox\My Software\Infra\Infra\obj\Debug\Infra.csprojResolveAssemblyReference.cache
+D:\Dropbox\My Software\Infra\Infra\obj\Debug\Infra.Properties.Resources.resources
+D:\Dropbox\My Software\Infra\Infra\obj\Debug\Infra.csproj.GenerateResource.Cache
+D:\Dropbox\My Software\Infra\Infra\obj\Debug\Infra.exe
+D:\Dropbox\My Software\Infra\Infra\obj\Debug\Infra.pdb
+D:\Dropbox\My Software\Infra\Infra\obj\Debug\Infra.forma.resources
